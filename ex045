@@ -1,0 +1,26 @@
+import random
+
+def jokenpo():
+    """Função para jogar Jokenpô contra o computador."""
+
+    opcoes = ["pedra", "papel", "tesoura"]
+    computador = random.choice(opcoes)
+
+    jogador = input("Escolha pedra, papel ou tesoura: ").lower()
+
+    while jogador not in opcoes:
+        print("Opção inválida. Escolha pedra, papel ou tesoura.")
+        jogador = input("Escolha pedra, papel ou tesoura: ").lower()
+
+    print(f"Você escolheu {jogador}, e o computador escolheu {computador}.")
+
+    if jogador == computador:
+        print("Empate!")
+    elif (jogador == "pedra" and computador == "tesoura") or \
+         (jogador == "papel" and computador == "pedra") or \
+         (jogador == "tesoura" and computador == "papel"):
+        print("Você venceu!")
+    else:
+        print("O computador venceu!")
+
+jokenpo()
