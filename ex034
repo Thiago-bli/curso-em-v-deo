@@ -1,0 +1,6 @@
+Sálario = float(input('Qual é o sálario do funcionário? R$ '))
+if Sálario <= 1250:
+    novo = Sálario + (Sálario * 15 / 100)
+else:
+    novo = Sálario + (Sálario * 10 / 100)
+print('Quem ganhava R${:.2f} passa a ganhar R${:.2f} agora.'.format(Sálario, novo))
