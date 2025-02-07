@@ -1,0 +1,2 @@
+cid = str(input('Em qe cidade voçe nasceu? '))
+print(cid[:5].upper() == 'SANTO')
