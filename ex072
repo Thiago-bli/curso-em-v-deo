@@ -1,0 +1,9 @@
+núm = ('zero', 'um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito',
+       'nove', 'dez', 'onze', 'doze', 'treze', 'quatorze', 'quinze', 'deszesseis',
+       'dezessete', 'dezessoito', 'dezenove', 'vinte')
+while True:
+    cont = int(input('Digite um número de 0 á 20: '))
+    if  0 <= cont <= 20:
+     break
+    print('Opção invalida!', end=' ')
+print(f'O número que voçe digitou foi: {núm[cont]}') 
